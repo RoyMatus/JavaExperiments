@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'com.itolltec'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.26'
+    testCompile "com.github.tomakehurst:wiremock-jre8:2.24.0"
+    compile group: 'com.thedeanda', name: 'lorem', version: '2.1'
+    testCompile group: 'org.awaitility', name: 'awaitility', version: '3.0.0'
+}
