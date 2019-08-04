@@ -15,8 +15,8 @@ import java.net.URISyntaxException;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
 
-public class Junit4Wiremock {
-    private static Logger log = Logger.getLogger(Junit4Wiremock.class);
+public class Junit4WiremockLocal {
+    private static Logger log = Logger.getLogger(Junit4WiremockLocal.class);
 
     @Rule
     public WireMockRule wireMockRule;
