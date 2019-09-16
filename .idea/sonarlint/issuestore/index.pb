@@ -29,3 +29,14 @@ g
 7src/test/java/wiremock/Junit4WiremockemoteInDocker.java,4\2\42cd929f2c09f6c184b20283662970a14406b9d0
 _
 /src/test/java/wiremock/Junit4WiremockLocal.java,a\5\a54570378222d7bfee311f1e42ff461bbb2b1fc5
+T
+$.idea/codeStyles/codeStyleConfig.xml,d\d\dd7b3350c29c49497756c7f32c69a3bed18b1cba
+L
+.idea/codeStyles/Project.xml,6\e\6ecd6000a7b6f4a2884412ff19f74193ed089648
+B
+docker-compose.yml,3\5\35b8c13cf2eb2a194eada000eb310d65aed53b2a
+O
+src/main/java/utils/Docker.java,1\e\1e5c52234306197a56f3ead40378a84e981fc490
+:
+
+Dockerfile,6\6\6651ddff6eb82c840ced7c1dddee15c6e1913dd4
