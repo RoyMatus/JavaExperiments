@@ -24,4 +24,5 @@ public class Junit4WiremockemoteInDocker {
         openUrlInBrowser("http://localhost:8443/blah");
         System.out.printf("");
     }
+
 }

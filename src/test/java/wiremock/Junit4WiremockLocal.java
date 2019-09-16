@@ -1,26 +1,22 @@
 package wiremock;
 
 import com.github.tomakehurst.wiremock.junit.WireMockRule;
-import org.apache.log4j.Logger;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import utils.Stuff;
 
-import java.awt.*;
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
-
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
 
+@Slf4j
 public class Junit4WiremockLocal {
-    private static Logger log = Logger.getLogger(Junit4WiremockLocal.class);
+
+    private final String LOREM_IPSUM = Stuff.getLoremIpsum();
 
     @Rule
     public WireMockRule wireMockRule;
-
 
     @Before
     public void setUp() throws Exception {
@@ -29,7 +25,7 @@ public class Junit4WiremockLocal {
                 urlEqualTo("/blah"))
                 .willReturn(
                         aResponse()
-                                .withBody(Stuff.getLoremIpsum())
+                                .withBody(LOREM_IPSUM)
                 ));
         wireMockRule.start();
     }
@@ -46,10 +42,7 @@ public class Junit4WiremockLocal {
     }
 
     private void openUrlInBrowser(String url) {
-        try {
-            Desktop.getDesktop().browse(new URI(url));
-        } catch (IOException | URISyntaxException e) {
-            log.error("Can't open url", e);
-        }
+        Stuff.openUrlInBrowser(url);
     }
+
 }
