@@ -2,15 +2,16 @@ package wiremock;
 
 import com.github.tomakehurst.wiremock.junit.WireMockRule;
 import lombok.extern.slf4j.Slf4j;
+import org.assertj.core.api.Assertions;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.By;
 import utils.BrowserUtils;
 import utils.Stuff;
 
+import static com.codeborne.selenide.Selenide.$;
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
 
 @Slf4j
@@ -41,20 +42,10 @@ public class Junit4WiremockLocal {
 
     @Test
     public void testJunit4() {
-        openUrlInBrowser(wireMockRule.baseUrl() + "/blah");
+        BrowserUtils.openUrlInChrome(wireMockRule.baseUrl() + "/blah");
+        Assertions.assertThat(
+                $(By.tagName("body")).getText())
+                .isEqualTo(LOREM_IPSUM);
         // TODO: 17.09.2019 Add assertion here
     }
-
-    private void openUrlInBrowser(String url) {
-        WebDriver driver = new EdgeDriver();
-        BrowserUtils.openUrlInBrowser(url);
-//        driver.get(url);
-//        driver.switchTo().window("localhost");
-
-
-//        Assertions.assertThat(driver.findElement(By.tagName("body")).getText())
-//                .isEqualTo(LOREM_IPSUM);
-        System.out.printf("");
-    }
-
 }

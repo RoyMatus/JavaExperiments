@@ -4,7 +4,7 @@ import lombok.extern.log4j.Log4j;
 import org.junit.Before;
 import org.junit.Test;
 
-import static utils.BrowserUtils.openUrlInBrowser;
+import static utils.BrowserUtils.openUrlInDefaultBrowser;
 
 @Log4j
 public class Junit4WiremockemoteInDocker {
@@ -20,7 +20,7 @@ public class Junit4WiremockemoteInDocker {
 
     @Test
     public void testJunit4() {
-        openUrlInBrowser("http://localhost:8443/blah");
+        openUrlInDefaultBrowser("http://localhost:8443/blah");
         // TODO: 17.09.2019 Add assertion here
         System.out.print("");
     }
