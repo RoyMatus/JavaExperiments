@@ -5,7 +5,7 @@ plugins {
 group 'com.itolltec'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 1.8
+sourceCompatibility = 1.11
 
 repositories {
     mavenCentral()
@@ -18,7 +18,8 @@ dependencies {
     compile group: 'com.thedeanda', name: 'lorem', version: '2.1'
     testCompile group: 'org.awaitility', name: 'awaitility', version: '3.0.0'
     compile group: 'log4j', name: 'log4j', version: '1.2.17'
-    compile group: 'org.projectlombok', name: 'lombok', version: '1.18.8'
+    compileOnly 'org.projectlombok:lombok:1.18.10'
+    annotationProcessor 'org.projectlombok:lombok:1.18.10'
     compile group: 'com.github.docker-java', name: 'docker-java', version: '3.1.5'
     compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
     testCompile group: 'org.assertj', name: 'assertj-core', version: '3.13.2'

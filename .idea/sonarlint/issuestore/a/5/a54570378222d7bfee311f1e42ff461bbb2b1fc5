@@ -1,3 +1,2 @@
 
-Ksquid:S2699,"-Add at least one assertion to this test case.(¥ÆñÙ8ˆı…çÆ-
-Bsquid:S2925'"$Remove this use of "Thread.sleep()".(ÃğÂ¬8¥îÃÛÅ-
+@squid:S2925"$Remove this use of "Thread.sleep()".(ÃğÂ¬8¥îÃÛÅ-

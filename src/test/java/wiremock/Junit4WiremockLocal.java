@@ -1,7 +1,6 @@
 package wiremock;
 
 import com.github.tomakehurst.wiremock.junit.WireMockRule;
-import lombok.extern.slf4j.Slf4j;
 import org.assertj.core.api.Assertions;
 import org.junit.After;
 import org.junit.Before;
@@ -14,7 +13,7 @@ import utils.Stuff;
 import static com.codeborne.selenide.Selenide.$;
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
 
-@Slf4j
+//@Slf4j
 public class Junit4WiremockLocal {
 
     private final String LOREM_IPSUM = Stuff.getLoremIpsum();

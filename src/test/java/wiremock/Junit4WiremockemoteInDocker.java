@@ -1,12 +1,11 @@
 package wiremock;
 
-import lombok.extern.log4j.Log4j;
 import org.junit.Before;
 import org.junit.Test;
 
 import static utils.BrowserUtils.openUrlInDefaultBrowser;
 
-@Log4j
+//@Log4j
 public class Junit4WiremockemoteInDocker {
 
     @Before
