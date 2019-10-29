@@ -1,2 +1,11 @@
 
-Ksquid:S2699"-Add at least one assertion to this test case.(¥ÆñÙ8ûü…çÆ-
+hsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(‚ëô¡şÿÿÿÿ8½¾ÓÅá-
+Qsquid:S1854"5Remove this useless assignment to local variable "p".(±Öáá8½¾ÓÅá-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(×•œ²8½¾ÓÅá-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(×•œ²8½¾ÓÅá-
+Nsquid:S1135"2Complete the task associated to this TODO comment.(‘Èšó8½¾ÓÅá-
+Bsquid:S1481"&Remove this unused "p" local variable.(±Öáá8½¾ÓÅá-
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(—§ø8½¾ÓÅá-
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¯·Ä±8½¾ÓÅá-
