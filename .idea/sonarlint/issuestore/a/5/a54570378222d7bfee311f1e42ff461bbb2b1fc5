@@ -1,5 +1,2 @@
 
-hsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(‚ëô¡şÿÿÿÿ8¼¾ÓÅá-
-csquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(«¤ÜÕ8¼¾ÓÅá-
-rsquid:S00116"VRename this field "LOREM_IPSUM" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(š®Ë8¼¾ÓÅá-
-Nsquid:S1135"2Complete the task associated to this TODO comment.(‘Èšó8¼¾ÓÅá-
+Bsquid:S2925&"$Remove this use of "Thread.sleep()".(ÃğÂ¬8‰Æá-

@@ -44,3 +44,9 @@ U
 %src/main/java/utils/BrowserUtils.java,6\a\6acaf4c968d2352b675934dd6409440194407993
 Q
 !src/main/java/utils/XmlUtils.java,f\e\fe9f1b631462c3f1deacd0a9b235c6784dfee302
+U
+%src/test/java/utils/XmlUtilsTest.java,b\4\b4dea0892d13f8801ccc5a80929f848387e1ac2e
+P
+ src/main/resources/xml/books.xml,0\1\0186a46005131cf4452e1bea761bd18828aeacbe
+U
+%src/main/resources/xml/extra-book.xml,0\c\0ce69d3aeb7f7792c0806b183b0b58fc6300dff3

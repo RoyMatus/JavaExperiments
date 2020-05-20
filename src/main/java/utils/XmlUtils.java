@@ -1,7 +1,6 @@
 package utils;
 
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
+import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -41,8 +40,30 @@ public class XmlUtils {
     }
 
     public void append(String from, String to) {
-        Document document = xmlMap.get(from);
-        Element cd = document.createElement("CD");
+        Document doc1 = xmlMap.get(to);
+        Element rootElement1 = doc1.getDocumentElement();
+        Document doc2 = xmlMap.get(from);
+        Element rootElement2 = doc2.getDocumentElement();
+
+        NamedNodeMap namedNodeMap2 = doc2.getAttributes();
+        for (int i = 0; i < namedNodeMap2.getLength(); i++) {
+            Attr importedNode = (Attr) doc1.importNode(namedNodeMap2.item(i), true);
+            rootElement1.setAttributeNodeNS(importedNode);
+        }
+        NodeList childNodes2 = rootElement2.getChildNodes();
+        for (int x = 0; x < childNodes2.getLength(); x++) {
+            Node importedNode = doc1.importNode(childNodes2.item(x), true);
+            rootElement1.appendChild(importedNode);
+        }
+
+//        document.getChildNodes().item(0).getChildNodes().getLength();
+//        Element element = document.createElement(xmlMap.get(from).getDocumentElement().getTagName());
+//        Node node = xmlMap.get(from).getFirstChild();
+//        System.out.println(document.getNodeType());
+//        System.out.println(node.getNodeType());
+//        document.importNode(node, true);
+//        element.appendChild(nodeList);
+//        document.appendChild(node);
     }
 
     public void save(String xmlName, Path path) throws TransformerException {

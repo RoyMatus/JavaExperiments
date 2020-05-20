@@ -12,8 +12,8 @@ import java.util.Map;
 
 public class XmlUtilsTest {
 
-    private Path xml1 = Path.of("src/main/resources/xml/books.xml");
-    private Path xml2 = Path.of("src/main/resources/xml/extra-book.xml");
+    private final Path xml1 = Path.of("src/main/resources/xml/books.xml");
+    private final Path xml2 = Path.of("src/main/resources/xml/extra-book.xml");
     private XmlUtils xmlUtils;
 
     @Before
@@ -34,7 +34,7 @@ public class XmlUtilsTest {
     @Test
     public void append() throws ParserConfigurationException {
         xmlUtils.getXml(xml1, xml2);
-        xmlUtils.append(xml2.getFileName().toString(), xml2.getFileName().toString());
+        xmlUtils.append(xml2.getFileName().toString(), xml1.getFileName().toString());
     }
 
     @Test
